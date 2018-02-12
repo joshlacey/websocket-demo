@@ -3,12 +3,14 @@
 const express = require('express')
 var bodyParser = require('body-parser')
 
-webApp.use(bodyParser.urlencoded({ extended: false }))
-webApp.use(bodyParser.json())
 
 //Web Server
 const webApp = express()
-webApp.urlencoded()
+
+
+webApp.use(bodyParser.urlencoded({ extended: false }))
+webApp.use(bodyParser.json())
+
 webApp.use(express.static(__dirname + '/webApp'))
 webApp.use(express.static(__dirname + '/mobileApp'))
 
