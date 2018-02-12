@@ -30,7 +30,7 @@ webApp.post('/websocket', (req, res)=> {
   }
 })
 
-const webServer = webApp.listen(3000)
+const webServer = webApp.listen(process.env.port || 80)
 
 
 //Pages to show on load
