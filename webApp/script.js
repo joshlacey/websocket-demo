@@ -1,7 +1,7 @@
 let textActionArea = document.querySelector('#textArea')
 let distanceActionArea = document.querySelector('#distanceArea')
 
-let socket = new WebSocket('ws://localhost:5001')
+let socket = new WebSocket('ws://twitterswipe-env.us-east-2.elasticbeanstalk.com:5001')
 
   socket.onmessage = function(event) {
     console.log('from web app: ' + event.data)

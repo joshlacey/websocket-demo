@@ -1,5 +1,5 @@
 
-var socket = new WebSocket('ws://192.168.1.3:5001') //must be the same address as your web server (192.168.1.3 will change based on current lan connection)
+var socket = new WebSocket('ws://twitterswipe-env.us-east-2.elasticbeanstalk.com:5001') //must be the same address as your web server (192.168.1.3 will change based on current lan connection)
 
 function moveLeft(e) {
   console.log('clicked left')
